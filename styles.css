@@ -943,3 +943,44 @@ h3 {
     overflow-wrap: anywhere;
   }
 }
+
+/* ==========================================================================
+   Print Styles
+   ========================================================================== */
+@media print {
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  .site-header,
+  .site-footer,
+  .btn-row,
+  .btn,
+  .bg-canvas,
+  body::before,
+  .skip-link {
+    display: none !important;
+  }
+
+  * {
+    color: #000 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  .resume-layout {
+    display: block;
+  }
+
+  .card {
+    border: none !important;
+    padding: 0 !important;
+    margin-bottom: 20px;
+  }
+
+  .sidebar {
+    margin-top: 30px;
+  }
+}
